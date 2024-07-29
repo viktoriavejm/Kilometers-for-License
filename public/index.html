@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track your miles</title>
+
+    <script src="./js/km.js" defer></script>
+    <link rel="stylesheet" href="./css/km.css">
+
+    <link rel="website icon" href="./img/car.png" type="png">
+</head>
+<body id="body">
+    <header id="header">
+        <div id="headH1">
+            <h1>Kilometers for License</h1>
+        </div>
+
+        <div id="navBar">
+            <img id="NavPic" onclick="openNav()" src="./img/nav.png" alt="">
+            
+        </div>
+    </header>
+
+    <div id="links" style="display: none;">
+        <a class="link" href="./index.html">Home</a>
+        <a class="link" href="./list.html">List</a>
+        <a class="link" href="./settings.html">Settings</a>
+    </div>
+
+    <section>
+        <div id="Fortschritt"></div>
+    </section>
+
+
+    <section id="input-content">
+        <div id="kmNumbers">
+            <input type="number" name="km" id="kmNumber" placeholder="Enter kilometers">
+        </div>
+
+        <div id="dateLocal">
+            <!-- <input type="text" name="datum" id="date" placeholder="Enter Date"> -->
+            <input type="datetime" name="datum" id="date" placeholder="Enter a Date">
+        </div>
+
+        <div id="ParentName">
+            <input type="text" name="name" id="parent" placeholder="Companion">
+        </div>
+
+        <div id="SubmitButton">
+            <input onclick="addToList()" type="submit" name="save" id="saveKm" value="Add to List">
+        </div>
+
+        <div id="ansW"></div>
+    </section>
+
+    <div id="info-text-bottom">
+        <h3>
+            Please enter the kilometers you have traveled into the designated field. Additionally, <span>don't forget to set your destination in the settings </span> for accurate tracking and personalized results. Safe travels!
+        </h3>
+    </div>
+
+    <div id="img-auto">
+        <img src="./img/auto.png" alt="auto">
+    </div>
+
+    <footer>
+        <div id="footer-grid">
+            <a class="footer-content" href="#">Contact</a>
+            <a class="footer-content" href="#">Contact us</a>
+            <p class="footer-content" >Vejmelek Viktoria</p>
+        </div>
+    </footer>
+</body>
+</html>

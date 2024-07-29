@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <script src="./js/settings.js" defer></script>
+    <link rel="stylesheet" href="./css/setting.css">
+
+    <link rel="website icon" href="./img/car.png" type="png">
+</head>
+<body id="body">
+    <header id="header">
+        <div id="headH1">
+            <h1>Kilometers for License</h1>
+        </div>
+
+        <div id="navBar">
+            <img id="NavPic" onclick="openNav()" src="./img/nav.png" alt="">
+            
+        </div>
+    </header>
+
+    <h2 id="sett">Settings</h2>
+
+    <div id="links" style="display: none;">
+        <a class="link" href="./index.html">Home</a>
+        <a class="link" href="./list.html">List</a>
+        <a class="link" href="">Settings</a>
+    </div>
+
+    <section>
+       <div id="settings-maxKM">
+            <div id="settings-text">
+                <p>Maximum number of kilometers</p>
+            </div>
+
+            <div id="settings-number">
+                <input type="number" name="km" id="maxKM" placeholder="Max Km">
+            </div>
+
+            <!-- <section id="loggedIn">
+                <div id="login">Log in</div>
+            </section>
+             -->
+            <div onclick="goalYESorNO()" id="goal">
+                <p id="goalP">You havent achieved your goal yet</p>
+            </div>
+       </div>
+    </section>
+
+    
+
+
+    <section id="safe">
+        <input onclick="safeMaxKM()" type="submit" name="save" id="saveSetting" value="Save Settings">
+    </section>
+
+    <div id="error"></div>
+</body>
+</html>

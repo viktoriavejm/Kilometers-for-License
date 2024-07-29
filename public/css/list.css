@@ -1,0 +1,80 @@
+@font-face {
+    font-family: km;
+    src: url(../font/RobotoCondensed-VariableFont_wght.ttf);
+}
+
+body{
+    background-image: url(../img/straße.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: km;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    
+    display: grid;
+    grid-template-columns: 75% 25%;
+    text-align: center;
+
+    background-color: #9DB2BF;
+    padding: 1%;
+
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+#headH1{
+    margin-top: 6%;
+    font-size: 0.7em;
+}
+
+#navBar > img{
+    width: 50%;
+    margin-top: 15%;
+}
+
+#links{
+    display: grid;
+    grid-template-columns: 100%;
+    z-index: 2;
+    text-decoration: none;
+}
+
+.link{
+    
+    text-decoration: none;
+    text-align: center;
+    margin: 10% 40% 0% 40%;
+    
+    font-size: 1.5em;
+    color: white;
+    border-bottom: solid rgb(255, 255, 255) 1px;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.link:hover{
+    scale: 0.7;
+}
+
+#list-km-grid > div {
+     display: grid; grid-template-columns: 1fr 1fr 1fr; width: 70%; margin-left: 15% ; margin-right: 15%;
+    }
+
+#list-km-grid p {
+     margin: 0; padding: 2vh 1vh; font-size: 2vh; border-bottom: 1px solid #000000; text-align: center;
+    }
+#list-km-grid{
+    backdrop-filter: blur(15px);
+    margin: 3%;
+    background-color: #ffffff82;
+    border-radius: 20px;
+    
+}
